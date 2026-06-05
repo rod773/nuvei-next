@@ -2,10 +2,7 @@
   "name": "nuvei-next",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "yarn@4.15.0",
   "scripts": {
-    "clean": "rm -rf .next",
-    "predev": "node -e \"require('fs').rmSync('.next',{recursive:true,force:true})\"",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

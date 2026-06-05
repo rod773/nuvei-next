@@ -1,0 +1,178 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #1a1a2e;
+}
+
+.section-wrap {
+  min-height: 200vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  margin: auto;
+  overflow: hidden;
+  padding: 6rem 2.5rem;
+  width: 100%;
+}
+
+.container {
+  max-width: 970px;
+  margin: auto;
+  text-align: center;
+}
+
+.heading-base {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+}
+
+.text-blue {
+  color: #2563eb;
+}
+
+.hidden-br {
+  display: none;
+}
+
+.description {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  position: relative;
+  padding: 2rem 0 120px 0;
+}
+
+.description::after {
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 60'%3E%3Cpath d='M5 50 Q70 10 90 5' stroke='%232563eb' stroke-width='3' fill='none' stroke-dasharray='4 4'/%3E%3Cpolygon points='82,2 92,5 85,13' fill='%232563eb'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-position: left top;
+  background-repeat: no-repeat;
+  content: '';
+  right: -42px;
+  bottom: 0;
+  height: 99px;
+  transform: rotate(29deg);
+}
+
+.description-inner {
+  display: inline-block;
+  max-width: 840px;
+}
+
+.logos-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 66px;
+}
+
+.logos-col {
+  opacity: 1;
+  transform: none;
+}
+
+.img-wrap {
+  position: relative;
+  max-width: 280px;
+}
+
+.img-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.nuvei-wrap {
+  margin-top: -25px;
+}
+
+.elliptic-wrap {
+  margin-top: 53px;
+}
+
+.worldpay-wrap {
+  margin-top: 1.25rem;
+}
+
+.sardine-wrap {
+  margin-top: 1.25rem;
+}
+
+.logos-bottom {
+  width: 100%;
+  opacity: 1;
+  transform: none;
+}
+
+.logos-bottom-inner {
+  max-width: 280px;
+  position: relative;
+  right: -1.25rem;
+  margin: 60px auto 24px;
+  transform: rotate(7deg);
+}
+
+.logos-bottom-inner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 100px 1.25rem;
+  }
+
+  .heading-base {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .hidden-br {
+    display: block;
+  }
+
+  .description {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .description::after {
+    display: none;
+  }
+
+  .logos-row {
+    margin-top: 22px;
+    gap: 1.5rem;
+  }
+
+  .nuvei-wrap {
+    margin-top: -35px;
+  }
+
+  .elliptic-wrap {
+    margin-top: 30px;
+  }
+
+  .worldpay-wrap,
+  .sardine-wrap {
+    margin-top: 10px;
+  }
+
+  .logos-bottom-inner {
+    right: -14px;
+    margin: 15px auto 0.25rem;
+    max-width: 150px;
+  }
+}
